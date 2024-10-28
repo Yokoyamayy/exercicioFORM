@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Opinião</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+</head>
+<body>
+    <div class="container my-5">
+        <h2>O que você achou do site?</h2> <br>
+        <form action="executa.php" method="POST">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="avaliacao" value="Muito Bom">
+                <label class="form-check-label">Muito Bom</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="avaliacao" value="Bom">
+                <label class="form-check-label">Bom</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="avaliacao" value="Regular">
+                <label class="form-check-label">Regular</label>
+            </div>
+            <div class="form-check form-check-inline mb-4">
+                <input class="form-check-input" type="radio" name="avaliacao" value="Ruim">
+                <label class="form-check-label">Ruim</label>
+            </div>
+
+           
+            <div class="mb-4">
+                <label for="corPreferida" class="form-label">De qual cor você mais gosta?</label>
+                <select class="form-select" id="corPreferida" name="cor">
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Roxo">Roxo</option>
+                    <option value="Rosa">Rosa</option>
+                    <option value="Vermelho">Vermelho</option>
+                    <option value="Laranja">Laranja</option>
+                    <option value="Marrom">Marrom</option>
+                    <option value="Cinza">Cinza</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Preto">Preto</option>
+                </select>
+            </div>
+
+           
+            <div class="mb-4">
+                <label for="comentarios" class="form-label">Digite seus comentários no espaço abaixo:</label>
+                <textarea class="form-control" id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+
+           
+            <h5>Diga-me como entrar em contato com você:</h5>
+            <div class="mb-3 row">
+                <label for="nome" class="col-sm-2 col-form-label">Nome:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nome" name="nome">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="fone" class="col-sm-2 col-form-label">Fone:</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="fone" name="fone">
+                </div>
+            </div>
+
+           
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="novidades" name="novidades" value="sim">
+                <label class="form-check-label" for="novidades">
+                    Quero receber novidades do site por e-mail
+                </label>
+            </div>
+
+           
+            <button type="submit" class="btn btn-primary">Enviar Dados</button>
+            <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
+        </form>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
